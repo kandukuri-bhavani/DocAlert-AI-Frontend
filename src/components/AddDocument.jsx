@@ -80,7 +80,7 @@ function AddDocument() {
 
     try {
       const response = await fetch(
-        "http://localhost:8081/api/documents",
+        "https://docalert-ai-backend.onrender.com/api/documents",
         {
           method: "POST",
           headers: {
