@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import mammoth from "mammoth";
 import DOMPurify from "dompurify";
 
-const API = "http://localhost:8081";
+const API = "https://docalert-ai-backend.onrender.com";
 
 function Dashboard() {
   const [documents, setDocuments] = useState([]);
