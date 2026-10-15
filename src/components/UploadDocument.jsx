@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./UploadDocument.css";
 
-const API_URL = "http://localhost:8081/api/documents/upload";
+const API_URL = "https://docalert-ai-backend.onrender.com/api/documents/upload";
 
 const FIELD_GROUPS = [
   {
@@ -233,7 +233,7 @@ function UploadDocument() {
     } catch (error) {
       console.error("Upload failed:", error);
       setMessage(
-        "Unable to connect to Spring Boot. Check that the backend is running on port 8081."
+        "Unable to connect to the server. Please try again."
       );
     } finally {
       setLoading(false);
