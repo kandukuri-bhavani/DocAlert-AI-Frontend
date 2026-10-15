@@ -30,7 +30,7 @@ function EditDocument() {
       return;
     }
 
-    fetch("http://localhost:8081/api/documents", {
+    fetch("https://docalert-ai-backend.onrender.com/api/documents", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -134,7 +134,7 @@ function EditDocument() {
     try {
 
       const response = await fetch(
-        `http://localhost:8081/api/documents/${id}`,
+        `https://docalert-ai-backend.onrender.com/api/documents/${id}`,
         {
           method: "PUT",
 
