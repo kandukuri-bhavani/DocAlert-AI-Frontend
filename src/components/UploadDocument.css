@@ -1,0 +1,99 @@
+
+.review-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0 16px;
+  flex-wrap: wrap;
+}
+
+.review-toolbar h3 {
+  margin: 0 0 6px;
+}
+
+.review-toolbar p {
+  color: #68758a;
+}
+
+.analysis-edit-form {
+  margin: 20px 0;
+}
+
+.analysis-edit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.analysis-edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.analysis-edit-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #34445b;
+}
+
+.analysis-edit-field input,
+.analysis-edit-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d9e1ec;
+  border-radius: 10px;
+  padding: 12px 13px;
+  background: #fff;
+  color: #18283f;
+  font: inherit;
+}
+
+.analysis-edit-field input:focus,
+.analysis-edit-field textarea:focus {
+  outline: none;
+  border-color: #5877d9;
+  box-shadow: 0 0 0 3px rgba(88, 119, 217, 0.12);
+}
+
+.analysis-edit-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.review-notice,
+.review-success {
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.review-notice {
+  background: #fff7e8;
+  border: 1px solid #f2d5a0;
+  color: #80531a;
+}
+
+.review-success {
+  background: #edf9f1;
+  border: 1px solid #b8e3c6;
+  color: #21683a;
+}
+
+.review-success p {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+  .analysis-edit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-toolbar {
+    align-items: flex-start;
+  }
+}
